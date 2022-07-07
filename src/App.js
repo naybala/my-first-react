@@ -1,11 +1,13 @@
 import React from"react";
+import Navbar  from "./Component/Navbar";
+import ShowCase from "./Component/ShowCase";
+import "./App.css"
 function App() {
   return(
-    <div className="container mt-5">
-      <h1 className="text-primary">Hello React</h1>
-      <br/>
-    <button className="btn btn-sm btn-warning">Testing React </button>
-    </div>
+   <div className="container">
+     <Navbar/> 
+     <ShowCase/>
+   </div>
   );
 }
 export default App;
