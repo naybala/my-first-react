@@ -4,10 +4,15 @@ import ShowCase from "./Component/ShowCase";
 import "./App.css"
 function App() {
   return(
-   <div className="container">
-     <Navbar/> 
-     <ShowCase/>
-   </div>
+    <div>
+        <div>
+          <Navbar/> 
+        </div>
+        <br/><br/><br/>
+        <div>
+         <ShowCase/>
+        </div>
+    </div>
   );
 }
 export default App;

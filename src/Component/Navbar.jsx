@@ -1,12 +1,13 @@
 import React from "react";
-
+import "./Navbar.css"
+const imgurl = "https://www.seekpng.com/png/detail/80-803597_io-is-compatible-with-all-javascript-frameworks-and.png"
 function Navbar() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
         <div class="container">
           <img
-            src="https://www.amazfit.com/static/version1653631126/frontend/Born/amazfit01/en_US/images/logo.png"
+            src={imgurl}
             class="img-fluid"
             alt=""
           />
@@ -22,13 +23,16 @@ function Navbar() {
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a href="#learn" class="nav-link">Watch Gallery</a>
+                <a href="#document" class="nav-link">Document</a>
               </li>
               <li class="nav-item">
-                <a href="#questions" class="nav-link">Questions</a>
+                <a href="#usage" class="nav-link">Usage</a>
               </li>
               <li class="nav-item">
-                <a href="#town" class="nav-link">Avaliable Shops</a>
+                <a href="#installation" class="nav-link">Installation</a>
+              </li>
+              <li class="nav-item">
+                <a href="#pratical" class="nav-link">Pratical</a>
               </li>
             </ul>
           </div>
