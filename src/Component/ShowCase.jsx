@@ -1,15 +1,18 @@
 import React from "react";
-const imgurl = "https://patterns.dev/img/reactjs/react-logo@3x.svg";
+import Img1 from "./../asset/images/undraw_react_re_g3ui.svg"
 function ShowCase() {
+    const alert = () =>{
+        console.log("hello");
+    } 
 
     return (
-        <div>
-            <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+       <>
+        <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
                 <div className="container">
                     <div className="d-sm-flex align-items-center justify-content-between">
                         <img
                             className="img-fluid w-50 d-none d-sm-block me-5 rounded-3"
-                            src={imgurl}
+                            src={Img1}
                             alt=""
                         />
                         <div>
@@ -21,8 +24,8 @@ function ShowCase() {
                             <a href="#learn">
                                 <button
                                     className="btn btn-dark btn-lg"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#enroll"
+                                   
+                                    onClick={alert}
                                 >
                                     Learn More
                                 </button>
@@ -30,8 +33,8 @@ function ShowCase() {
                         </div>
                     </div>
                 </div>
-            </section >
-        </div>
+        </section>
+       </>
     )
 }
 

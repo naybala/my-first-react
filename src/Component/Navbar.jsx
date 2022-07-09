@@ -3,42 +3,43 @@ import "./Navbar.css"
 const imgurl = "https://www.seekpng.com/png/detail/80-803597_io-is-compatible-with-all-javascript-frameworks-and.png"
 function Navbar() {
   return (
-    <div>
-      <nav class="navbar navbar-expand-lg py-3 fixed-top bg-light">
-        <div class="container">
-          <img
-            src={imgurl}
-            class="img-fluid"
-            alt=""
-          />
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navmenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <>
+      <nav className="navbar navbar-expand-lg py-3 fixed-top bg-light">
+          <div className="container">
+            <img
+              src={imgurl}
+              className="img-fluid rounded-2"
+              alt=""
+            />
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navmenu"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
 
-          <div class="collapse navbar-collapse" id="navmenu">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a href="#document" class="nav-link">Document</a>
-              </li>
-              <li class="nav-item">
-                <a href="#usage" class="nav-link">Usage</a>
-              </li>
-              <li class="nav-item">
-                <a href="#installation" class="nav-link">Installation</a>
-              </li>
-              <li class="nav-item">
-                <a href="#pratical" class="nav-link">Pratical</a>
-              </li>
-            </ul>
+            <div className="collapse navbar-collapse" id="navmenu">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <a href="#document" className="nav-link">Document</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#usage" className="nav-link">Usage</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#installation" className="nav-link">Installation</a>
+                </li>
+                <li className="nav-item">
+                  <a href="#pratical" className="nav-link">Pratical</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
       </nav>
-    </div>
+      <br/><br/><br/>
+    </>
   )
 }
 
