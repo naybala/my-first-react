@@ -1,13 +1,13 @@
 import React from "react";
 import Img1 from "./../asset/images/undraw_react_re_g3ui.svg"
 function ShowCase() {
-    const alert = () =>{
+    const alert = () => {
         console.log("hello");
-    } 
+    }
 
     return (
-       <>
-        <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <>
+            <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
                 <div className="container">
                     <div className="d-sm-flex align-items-center justify-content-between">
                         <img
@@ -24,7 +24,7 @@ function ShowCase() {
                             <a href="#learn">
                                 <button
                                     className="btn btn-dark btn-lg"
-                                   
+
                                     onClick={alert}
                                 >
                                     Learn More
@@ -33,8 +33,9 @@ function ShowCase() {
                         </div>
                     </div>
                 </div>
-        </section>
-       </>
+            </section>
+            <br /><br /><br /><br /><br /><br /><br /><br />
+        </>
     )
 }
 
