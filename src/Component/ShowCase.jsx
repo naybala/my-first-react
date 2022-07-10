@@ -7,7 +7,7 @@ function ShowCase() {
 
     return (
         <>
-            <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+            <div className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
                 <div className="container">
                     <div className="d-sm-flex align-items-center justify-content-between">
                         <img
@@ -33,7 +33,7 @@ function ShowCase() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
             <br /><br /><br /><br /><br /><br /><br /><br />
         </>
     )
