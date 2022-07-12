@@ -1,10 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css"
 const imgurl = "https://www.seekpng.com/png/detail/80-803597_io-is-compatible-with-all-javascript-frameworks-and.png"
+
+
+
 function Navbar() {
+  const [offest, setOffset] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => setOffset(window.pageYOffset);
+    // clean up code
+    window.removeEventListener('scroll', onScroll);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+
+
+  }, []);
+
+  const sections = document.querySelectorAll("section[id]");
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 50;
+    const sectionId = current.getAttribute("id");
+    console.log(sectionId);
+    if (offest > sectionTop && offest <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".nav-item a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".nav-item a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+
+
+
   return (
     <>
-      <nav className="navbar navbar-expand-lg py-3 fixed-top bg-light">
+      <nav className="navbar navbar-expand-lg py-3 fixed-top bg-light" onScrollCapture={useEffect}>
         <div className="container">
           <img
             src={imgurl}
@@ -26,13 +60,13 @@ function Navbar() {
                 <a href="#document" className="nav-link">Document</a>
               </li>
               <li className="nav-item">
-                <a href="#usage" className="nav-link">Usage</a>
+                <a href="#tutorial" className="nav-link">Tutorials</a>
               </li>
               <li className="nav-item">
-                <a href="#installation" className="nav-link">Installation</a>
+                <a href="#blog" className="nav-link">Blog</a>
               </li>
               <li className="nav-item">
-                <a href="#pratical" className="nav-link">Pratical</a>
+                <a href="#community" className="nav-link">Community</a>
               </li>
             </ul>
           </div>
