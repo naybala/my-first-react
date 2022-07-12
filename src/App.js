@@ -1,4 +1,5 @@
 import React from "react";
+import ScrollTop from "./Component/ScrollTop/ScrollTop";
 import Navbar from "./Component/Navbar";
 import ShowCase from "./Component/ShowCase";
 import SignUp from "./Component/SignUp";
@@ -13,6 +14,7 @@ function App() {
       <SignUp/>
       <Document/>
       <Tutorial/>
+      <ScrollTop/>
     </div>
   );
 }

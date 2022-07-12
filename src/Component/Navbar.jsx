@@ -22,7 +22,7 @@ function Navbar() {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
     const sectionId = current.getAttribute("id");
-    console.log(sectionId);
+    // console.log(sectionId);
     if (offest > sectionTop && offest <= sectionTop + sectionHeight) {
       document
         .querySelector(".nav-item a[href*=" + sectionId + "]")
