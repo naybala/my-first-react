@@ -5,6 +5,7 @@ import ShowCase from "./Component/ShowCase";
 import SignUp from "./Component/SignUp";
 import Document from "./Component/Document/Document";
 import Tutorial from "./Component/Tutorial/Tuotrial";
+import Blog  from "./Component/Blog/Blog";
 import "./App.css"
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Document/>
       <Tutorial/>
       <ScrollTop/>
+      <Blog/>
     </div>
   );
 }

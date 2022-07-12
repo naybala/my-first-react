@@ -1,13 +1,13 @@
 import React from "react";
-import Img1 from "./../../asset/images/undraw_next_js_.svg"
-function Sample() {
+import Img1 from "./../../asset/images/undraw_feedback.svg"
+function SampleTwo() {
     return (
         <>
             <section className="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
                 <div className="container">
-                    <div className="d-sm-flex  justify-content-between">
+                    <div className="d-sm-flex  align-items-center  justify-content-between">
                         <div>
-                            <h2><span className="text-dark"> Next: Intro to Next.Js</span></h2>
+                            <h2><span className="text-dark"> API: Work With Laravel</span></h2>
                             <p className="my-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, neque. Lorem
                                 ipsum dolor sit amet consectetur adipisicing elit. Facere, maiores.
@@ -30,4 +30,4 @@ function Sample() {
     )
 }
 
-export default Sample;
+export default SampleTwo;

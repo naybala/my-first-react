@@ -16,14 +16,14 @@ function ShowCase() {
                             alt=""
                         />
                         <div>
-                            <h1><span className="text-dark"> React Org Global </span></h1>
+                            <h1><span className=""> React Org Global </span></h1>
                             <p className="lead my-4">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, neque. Lorem
                                 ipsum dolor sit amet consectetur adipisicing elit. Facere, maiores.
                             </p>
                             <a href="#learn">
                                 <button
-                                    className="btn btn-dark btn-lg"
+                                    className="btn btn-dark btn-lg border-0"
 
                                     onClick={alert}
                                 >

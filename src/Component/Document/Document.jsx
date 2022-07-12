@@ -5,7 +5,7 @@ import "./Document.css";
 function Document() {
     return (
         <>
-            <section className="p-5" id="document">
+            <section className="p-5 bg-light" id="document">
                 <br />  <br />
                 <div className="container">
                     <h1 className="text-center">Documentation</h1>
